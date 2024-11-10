@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Background image styling */
+header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    height: 100%;
+    background-image: url(images/images.jpeg);
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #a84212b5;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Header content styles */
+.header-content {
+    padding: 10% 0;
+    width: 50%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text span {
+    color: #ff004f;
+}
+
+/* Social icons styles */
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #291ad4;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+/* Button styles */
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+    transition: background 0.5s;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+
+/* Section styles */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Home section */
+.home {
+    background: linear-gradient(135deg, rgba(255, 0, 79, 0.1), rgba(0, 0, 0, 0.5)), url(images/home-background.jpg) no-repeat center center/cover;
+}
+
+/* About section */
+.about {
+    background: rgba(255, 0, 79, 0.3);
+}
+
+/* Education section */
+.education {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff004f;
+}
+
+/* Portfolio section */
+.portfolio {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact section */
+/* Contact section */
+.contact {
+    background: rgba(255, 0, 79, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Add hover effect for sections */
+.section:hover {
+    transform: scale(1.02);
+}
